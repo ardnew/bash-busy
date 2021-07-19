@@ -1,7 +1,7 @@
 # busy
 Very simple animated busy indicator for Bash shell scripts
 
-![busy for 2 seconds](extras/demo.gif)
+![busy for 2 seconds](extra/demo.gif)
 
 # Usage
 

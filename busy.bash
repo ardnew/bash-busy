@@ -22,7 +22,7 @@ busy() {
 	n=0
 	printf "   %s\r" "${prompt}"
 	while ! eval -- "${*}"; do
-    printf " %s \r" "${frame[((n=++n%${#frame[@]}))]}"
+		printf " %s \r" "${frame[((n=++n%${#frame[@]}))]}"
 		sleep "${delay}"
 	done
 }

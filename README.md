@@ -15,7 +15,7 @@ If the first argument (`[delay]`) appears to be a time duration (as recognized b
 
 The next argument is the prompt printed next to the animated busy string.
 
-The final argument is a string that is passed to `eval` and determines how long to continue the busy loop. As long as the expression evaluates `false`, the busy loop continues running. Once it evaluates true, the busy loop exits and the function returns.
+The final argument is a string that is passed to `eval` and determines how long to continue the busy loop. As long as the expression evaluates to `false` (non-zero, or `-ne 0`), the busy loop continues running. Once it evaluates to `true` (zero, or `-eq 0`), the busy loop exits and the function returns.
 
 ## Asynchronous tasks
 
